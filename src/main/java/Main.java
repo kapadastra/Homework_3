@@ -22,6 +22,8 @@ public class Main {
 
        public static void main(String[] args) throws IOException, SQLException {
 
+           System.out.println("Привет, при запуске main, бд удаляется.");
+
            AnimalTable animalTable = new AnimalTable();
            List<String> columnsAnimalTable = new ArrayList<>();
            columnsAnimalTable.add("id INT AUTO_INCREMENT PRIMARY KEY");
