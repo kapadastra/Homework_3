@@ -11,6 +11,7 @@ import data.Command;
 
 import data.AnimalData;
 
+import db.MySQLConnect;
 import factory.AnimalFactory;
 import tables.AnimalTable;
 import utils.ValNum;
@@ -110,8 +111,8 @@ public class Main {
                     }
 
                     case LIST: {
-                        List<Animal> animals1 = animalTable.read();
-                        for (Animal animal : animals1) {
+                        List<Animal> animalsTable = animalTable.read();
+                        for (Animal animal : animalsTable) {
                             System.out.println(animal);
                         }
                         break;
@@ -174,6 +175,7 @@ public class Main {
 
                     case EXIT: {
                         scanner.close();
+                        MySQLConnect.close();
                         System.exit(0);
                     }
 

@@ -8,15 +8,6 @@ public class Animal {
     private String type, name, color;
     private int weight, age;
 
-
-//    public Animal(String name, Integer age, Integer weight, String color) {
-//        this.name = name;
-//        this.age = age;
-//        this.weight = weight;
-//        this.color = color;
-//        this.type = "";
-//    }
-
     public int getId() {
         return id;
     }

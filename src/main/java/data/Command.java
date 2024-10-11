@@ -6,7 +6,4 @@ public enum Command {
     EDIT,
     FILTER,
     EXIT;
-
-
-
 }
